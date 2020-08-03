@@ -13,7 +13,7 @@ Drawing original signal + reflected sound in areas within distance of 160 from r
 ![reflection in radius](video_saves/gif/correct_reflection_point_show_in_radius.gif)
 
 # With source playing delayed signal in addition to signal:
-With delay of 9 points behind from the sin wave<br>
+Where source is emitting f(x) + f(x-9)<br>
 (Seems to "reverse" in the area of the reflected sound)<br>
 ![with delay](video_saves/gif/delay_90.gif)
 
