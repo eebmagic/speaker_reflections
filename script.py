@@ -20,7 +20,6 @@ def dist(a, b):
 
 
 def get_z(p, source, t=0):
-    px, py = p
     distance = dist(p, source)
 
     z = wave(distance, t=t)
@@ -31,16 +30,14 @@ if __name__ == "__main__":
     # Area settings
     width, height = 100, 100
     total_frames = 150
-    source = (-40, 0)
+    source = (10, height/2)
 
     # Make points
     X, Y = [], []
-    for i in range(0, width):
-        x = i - (width/2)
+    for x in range(0, width):
         X.append(x)
 
-    for j in range(0, height):
-        y = j - (height/2)
+    for y in range(0, height):
         Y.append(y)
 
     # Make data at those points
