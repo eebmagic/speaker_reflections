@@ -50,7 +50,7 @@ def get_z_with_counteraction(p, source, wall_x, t=0, delay=5):
     delay_z = get_z(p, source, t=t-delay)
 
     if dist(p, reflected_source) < 160:
-        real_z = original_z + reflect_z + delay_z
+        real_z = original_z + reflect_z + (-delay_z)
     else:
         real_z = original_z
 
@@ -80,8 +80,10 @@ if __name__ == "__main__":
             for x in X:
                 curr = (x, y)
                 # z = get_z(curr, source, t=t)
-                # z = get_z_with_wall(curr, source, wall_x=width, t=t)
-                z = get_z_with_counteraction(curr, source, wall_x=width, t=t, delay=90/2)
+                z = get_z_with_wall(curr, source, wall_x=width, t=t)
+                # z = get_z_with_counteraction(curr, source, wall_x=width, t=t, delay=90/2)
+                ref_source = ((2*width)-source[0], source[1])
+                z -= get_z(curr, ref_source, t=t)
                 row.append(z)
             Z.append(row)
         frames.append(Z)
