@@ -22,3 +22,6 @@ Where source is emitting f(x) + f(x-9)<br>
 Theoretical speaker would be behind the reflecting wall<br>
 (Sound in the area of the reflection now matches original signal)<br>
 ![theoretical speaker at focal point](video_saves/gif/speaker_inverting_at_reflection_point.gif)
+
+# Conclusion
+From what I tried, it looks like the only way to totally cancel out the reflection would be to have a speaker that is able to emit from the focal point of the reflection (which would require it behind behind and emitting throught the wall)
